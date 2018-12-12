@@ -1,0 +1,49 @@
+.jumbotron {
+	background-image: linear-gradient(gray, transparent, gray), url(../images/index-bg.png);
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+}
+
+.lead {
+	margin: 20px 20%;
+}
+
+nav a {
+	margin: 20px;
+}
+
+img {
+	width: 100%;
+}
+
+section {
+	min-height: 80vh;
+}
+
+#about-title {
+	margin: 50px auto;
+}
+
+#mission, #vision {
+	margin: 30px auto;
+}
+
+#snippet {
+	margin: 50px auto 100px;
+}
+
+.footer {
+	min-height: 70vh;
+}
+
+footer {
+	color: white;
+	width: 100%;
+	background-color: black;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	bottom: 0;
+}

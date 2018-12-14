@@ -3,24 +3,95 @@ body {
 }
 
 .jumbotron {
-	background-image: linear-gradient(gray, transparent, gray), url(http://placekitten.com/1280/640);
+	background-image: linear-gradient(transparent, black, transparent), url(../images/landing.jpg);
 	background-position: center;
 	background-size: cover;
 	position: fixed;
 	height: 100vh;
 	width: 100vw;
+	color: white;
+}
+
+.nav-brand {
+	height: 50px;
+	width: 50px;
 }
 
 .lead {
 	margin: 20px 20%;
 }
 
-nav a {
-	margin: 20px;
+.carousel-caption {
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 34px;
 }
 
-nav a:hover {
-	background-color: lightgray;
+.carousel-caption span {
+	font-size: 200%;
+}
+
+.card-body {
+	padding: 20px auto;
+}
+
+.read-more-state {
+	display: none;
+}
+
+.read-more-target {
+  display: none;
+  max-height: 0;
+  font-size: 0;
+  transition: .5s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  display: inline-block;
+  font-size: inherit;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}
+
+nav a {
+	margin: 0 20px;
+	color: black;
+}
+
+li {
+	position: relative;
+}
+
+.fa-skull-crossbones {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: red;
+	font-size: 25px;
+	transform: rotate(45deg);
+	visibility: hidden;
+}
+
+nav li:hover .fa-skull-crossbones {
+	visibility: visible;
 }
 
 img {

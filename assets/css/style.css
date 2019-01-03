@@ -978,6 +978,10 @@ footer {
 		width: 10rem;
 		height: 10rem;
 	}
+	#gallery p {
+		display: block;
+		font-size: .7rem;
+	}
 	#contact .contact-wrapper {
 		flex-direction: column;
 	}

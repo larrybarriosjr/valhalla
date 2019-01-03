@@ -567,6 +567,21 @@
 	height: 20rem;
 	overflow: hidden;
 	margin: 1rem auto;
+	position: relative;
+}
+#gallery span:hover > p {
+	display: block;
+}
+#gallery p {
+	text-align: center;
+	font-style: italic;
+	color: lightgray;
+	padding: 1rem 0;
+	width: 100%;
+	background: rgba(0,0,0,.7);
+	position: absolute;
+	top: 0;
+	display: none;
 }
 	#gallery .portrait {
 		width: 100%;
@@ -581,7 +596,7 @@
 	height: auto;
 }
 	.modal-dialog img {
-		height: 85vh;
+		height: 85vmin;
 		width: auto;
 	}
 

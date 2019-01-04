@@ -593,11 +593,14 @@
 	}
 .modal-dialog {
 	max-width: 100vw;
-	height: auto;
+	height: 85vh;
+	display: flex;
+	align-items: center;
 }
 	.modal-dialog img {
-		height: 85vmin;
+		max-height: 85vmin;
 		width: auto;
+		height: auto;
 	}
 
 /********** CONTACT **********/
@@ -1064,7 +1067,7 @@ footer {
 		margin: 1rem;
 	}
 }
-/*////////// IPHONE (0px-375px) //////////*/
+/*////////// IPHONE (357px-407px) //////////*/
 @media only screen and (max-width: 407px) {
 	#ribbon ul {
 		width: 100%;
@@ -1090,5 +1093,27 @@ footer {
 	}
 	.footer-brand {
 		display: none;
+	}
+}
+/*////////// (0px-356px) //////////*/
+@media only screen and (max-width: 356px) {
+	#home h1,
+	#branches h1,
+	#membership h1,
+	#gallery h1,
+	#contact h1,
+	#about h1 {
+		font-size: 4rem;
+	}
+	#index h1,
+	#eat h1,
+	#sleep h1,
+	#member-rank h1,
+	#partners h1 {
+		font-size: 3rem;
+	}
+	#gallery span {
+		width: 8rem;
+		height: 8rem;
 	}
 }

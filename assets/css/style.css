@@ -740,6 +740,32 @@ footer {
 
 
 
+/*////////// XL (1200px) //////////*/
+@media only screen and (min-width: 1920px) {
+	#sleep .image {
+		width: 100%;
+	}
+	#sleep a:nth-child(1) {
+		left: 5%;
+		top: 25%;
+	}
+	#sleep a:nth-child(2) {
+		left: 41%;
+		top: 25%;
+	}
+	#sleep a:nth-child(3) {
+		left: 77%;
+		top: 25%
+	}
+	#sleep a:nth-child(4) {
+		top: 25%;
+		left: 59%;
+	}
+	#sleep a:nth-child(5) {
+		top: 25%;
+		left: 23%;
+	}
+}
 /*////////// LARGE (992px-1199px) //////////*/
 @media only screen and (max-width: 1199px) {
 	body, html {
